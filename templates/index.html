@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>YouTube Video Summarizer</h2>
+        <label for="youtube-url">Enter YouTube URL:</label>
+        <input type="text" id="youtube-url" placeholder="Paste YouTube URL here">
+        <button onclick="summarize()">Summarize</button>
+        <div id="summary-container">
+            <h3>Summary:</h3>
+            <p id="summary-text">Your summary will appear here...</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
